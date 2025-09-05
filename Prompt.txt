@@ -1,0 +1,48 @@
+Follow these steps strictly in order (1 → 7).  
+Execute them one by one without skipping or merging.  
+Always provide full file contents when creating files.  
+
+1. Clone the GitHub repository:
+   https://github.com/venkatkukatla/Terraform-ai.git  
+
+2. Create and switch to a new branch named dev.  
+
+3. Create Terraform files in the project root:
+   - main.tf
+   - variables.tf
+   - terraform.tfvars
+
+   These must provision AWS resources:
+   - VPC
+   - Subnet
+   - Route Table
+   - Internet Gateway
+   - Security Group
+   - S3 bucket
+   - DynamoDB table
+
+4. Create a folder `/.github/workflows/` with 3 workflow files:
+   - build.yml → basic syntax check (terraform validate)
+   - terraform-plan.yml → runs terraform init and terraform plan
+   - terraform-apply.yml → runs terraform apply (with auto-approve for CI)
+
+5. Create `.gitignore` with rules to exclude:
+   - .terraform/
+   - *.tfstate
+   - *.tfstate.backup
+   - crash.log
+   - .DS_Store
+
+6. Create or update `README.md` with:
+   - Project purpose (Terraform + GitHub Actions automation)
+   - AWS resources being provisioned
+   - Explanation of workflows (build, plan, apply)
+
+7. Commit and push the dev branch to GitHub.
+
+---
+
+⚠️ Rules:
+- Use commands where needed and file creation where needed.
+- Provide full file content when generating new files.
+- Do not skip any step. Complete each before moving to the next.
