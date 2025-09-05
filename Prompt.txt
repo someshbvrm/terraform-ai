@@ -3,7 +3,7 @@ Execute them one by one without skipping or merging.
 Always provide full file contents when creating files.  
 
 1. Clone the GitHub repository:
-   https://github.com/venkatkukatla/Terraform-ai.git  
+   https://github.com/someshbvrm/terraform-ai.git  
 
 2. Create and switch to a new branch named dev.  
 
